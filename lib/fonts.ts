@@ -22,6 +22,8 @@ export const body = Atkinson_Hyperlegible_Next({
   subsets: ["latin", "latin-ext"],
   variable: "--font-body-face",
   display: "swap",
+  // Next no tiene métricas de respaldo para esta fuente; evita el aviso en el build.
+  adjustFontFallback: false,
 });
 
 export const mono = Geist_Mono({
